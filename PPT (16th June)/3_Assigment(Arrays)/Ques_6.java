@@ -27,8 +27,10 @@ public class Ques_6 {
         // Input: nums = [2,2,1]
         // Output: 1
 
-        // Answer ==>>>>>>  Solution 
+        // Answer ==>>>>>> Solution
 
     }
 
 }
+
+
