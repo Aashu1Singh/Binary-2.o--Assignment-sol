@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Positions Example</title>
+    <style>
+      /* Static */
+      .static-element {
+        position: static;
+      }
+
+      /* Fixed */
+      .fixed-element {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      }
+
+      /* Sticky */
+      .sticky-element {
+        position: sticky;
+        top: 50px;
+      }
+
+      /* Relative */
+      .relative-element {
+        position: relative;
+        top: 10px;
+        left: 20px;
+      }
+
+      /* Absolute */
+      .absolute-element {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      /* Additional styles for visualization */
+      .positioned-element {
+        height: 100px;
+        width: 100px;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      body {
+        height: 2000px; /* To create a scrollable area for sticky positioning */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1) Static:
+            The `static` position is the default positioning behavior for elements. Elements with `position: static` are positioned according to the normal flow of the document. -->
+    <div class="static-element positioned-element">Static</div>
+
+    <!-- 2) Fixed:
+            The `fixed` position positions an element relative to the browser window, regardless of scrolling. The element stays fixed in its position even when the page is scrolled. -->
+
+    <div class="fixed-element positioned-element">Fixed</div>
+
+    <!-- 3) Sticky:
+            The `sticky` position is a hybrid of `relative` and `fixed` positions. It positions an element based on the user's scroll position. The element behaves as `relative` until the user reaches a specified threshold, after which it becomes `fixed`. -->
+    <div class="sticky-element positioned-element">Sticky</div>
+
+    <!-- 4) Relative:
+        The `relative` position positions an element relative to its normal position in the document flow. The element can be adjusted using `top`, `right`, `bottom`, and `left` properties. -->
+
+    <div class="relative-element positioned-element">Relative</div>
+
+    <!-- 5) Absolute: The `absolute` position positions an element relative to its
+    nearest positioned ancestor or the initial containing block. It is taken out
+    of the normal flow of the document. -->
+    <div class="absolute-element positioned-element">Absolute</div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!-- In JavaScript, an execution context is an environment in which JavaScript code is executed. It consists of three main components: the Variable Environment, the Lexical Environment, and the This Binding. Each time a function is invoked, a new execution context is created.
+
+Let's break down the components of an execution context:
+
+1) Variable Environment: The Variable Environment contains variables, function declarations, and function arguments defined within the current scope. It also includes any variables declared using the `var` keyword. The Variable Environment provides access to these variables during the execution of the code.
+
+2) Lexical Environment: The Lexical Environment is similar to the Variable Environment, but it also includes information about the scope chain. The scope chain is a hierarchy of scopes that determines variable accessibility. It allows variables to be accessed from outer scopes within nested functions.
+
+3) This Binding: The This Binding refers to the value of the `this` keyword within the current execution context. It represents the context in which a function is called and can vary depending on how the function is invoked.
+
+To illustrate the concept of execution context, here's a simplified diagram:
+
+
+
+Global Execution Context
+_____________________________
+| Variable Environment      |
+|---------------------------|
+|       Global Variables    |
+|       Function Declarations |
+|       Function Arguments  |
+|___________________________|
+| Lexical Environment       |
+|---------------------------|
+|       Scope Chain         |
+|___________________________|
+|       This Binding        |
+|---------------------------|
+|       Global Object       |
+|___________________________|
+
+Function Execution Context
+_____________________________
+| Variable Environment      |
+|---------------------------|
+|       Local Variables     |
+|       Function Declarations |
+|       Function Arguments  |
+|___________________________|
+| Lexical Environment       |
+|---------------------------|
+|       Scope Chain         |
+|___________________________|
+|       This Binding        |
+|---------------------------|
+ -->
