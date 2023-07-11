@@ -22,18 +22,18 @@ class Cat extends Animal {
 }
 
 // class A {
-// public double show() {
-// return -1;
+//     public double show() {
+//         return -1;
 
-// }
+//     }
 // }
 
 // class B extends A {
-// public float show() {
+//     public float show() {
 
-// return 1.0f;
+//         return 1.0f;
 
-// }
+//     }
 // }
 
 // public class Demo {
