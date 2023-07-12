@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Input App</title>
+  <style>
+    #inputBox {
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    function addText() {
+      var inputElement = document.getElementById("inputBox");
+      var text = inputElement.value.trim();
+
+      if (text !== "") {
+        var outputElement = document.getElementById("output");
+        var newParagraph = document.createElement("p");
+        newParagraph.textContent = text;
+        outputElement.appendChild(newParagraph);
+        inputElement.value = "";
+      }
+    }
+  </script>
+</head>
+<body>
+  <input id="inputBox" type="text">
+  <button onclick="addText()">Submit</button>
+  <div id="output"></div>
+</body>
+</html>
