@@ -21,7 +21,9 @@ class Solution {
 
         // if function does not retun then it means all digits were 9s
         int[] ans2 = new int[digits.length + 1];
+
         ans2[0] = 1;
+        
         return ans2;
 
     }
